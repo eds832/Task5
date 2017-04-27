@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tariffs xmlns="http://www.example.com/tariffs" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.example.com/tariffs tariff.xsd ">
+	 	<per-mb-internet name="Smart0" operator-name="Velcom">
+			<payroll>7.7</payroll>
+			<call-prices>
+				<inner-call-price>0.07</inner-call-price>
+				<out-call-price>0.17</out-call-price>
+				<land-line-call-price>0.17</land-line-call-price>
+			</call-prices>
+			<sms-price>0.04</sms-price>
+			<parameters>
+				<number-favorites>5</number-favorites>
+				<tariffing>minute</tariffing>
+				<init-price>10.0</init-price>
+			</parameters>
+			<per-mb-price>0.7</per-mb-price>
+		</per-mb-internet>
+		
+		<fix-internet-pack name="Smart1" operator-name="Velcom" over-size-price="0.1">
+			<payroll>11.1</payroll>
+			<call-prices>
+				<inner-call-price>0.05</inner-call-price>
+				<out-call-price>0.15</out-call-price>
+				<land-line-call-price>0.15</land-line-call-price>
+			</call-prices>
+			<sms-price>0.04</sms-price>
+			<parameters>
+				<number-favorites>5</number-favorites>
+				<tariffing>minute</tariffing>
+				<init-price>10.0</init-price>
+			</parameters>
+			<i-net-pack-size>500</i-net-pack-size>
+		</fix-internet-pack>
+
+		<fix-internet-pack name="Smart2" operator-name="Velcom" over-size-price="0.1">
+			<payroll>17.2</payroll>
+			<call-prices>
+				<inner-call-price>0.03</inner-call-price>
+				<out-call-price>0.12</out-call-price>
+				<land-line-call-price>0.12</land-line-call-price>
+			</call-prices>
+			<sms-price>0.04</sms-price>
+			<parameters>
+				<number-favorites>5</number-favorites>
+				<tariffing>minute</tariffing>
+				<init-price>10.0</init-price>
+			</parameters>
+			<i-net-pack-size>1000</i-net-pack-size>
+		</fix-internet-pack>
+
+		<fix-internet-pack name="Smart3" operator-name="Velcom" over-size-price="0.1">
+			<payroll>27.3</payroll>
+		<call-prices>
+				<inner-call-price>0.02</inner-call-price>
+				<out-call-price>0.09</out-call-price>
+				<land-line-call-price>0.09</land-line-call-price>
+			</call-prices>
+			<sms-price>0.04</sms-price>
+			<parameters>
+				<number-favorites>5</number-favorites>
+				<tariffing>minute</tariffing>
+				<init-price>10.0</init-price>
+			</parameters>
+			<i-net-pack-size>3000</i-net-pack-size>
+		</fix-internet-pack>
+
+		<fix-internet-pack name="Smart4" operator-name="Velcom" over-size-price="0.1">
+			<payroll>37.4</payroll>
+			<call-prices>
+				<inner-call-price>0.01</inner-call-price>
+				<out-call-price>0.07</out-call-price>
+				<land-line-call-price>0.07</land-line-call-price>
+			</call-prices>
+			<sms-price>0.04</sms-price>
+			<parameters>
+				<number-favorites>5</number-favorites>
+				<tariffing>minute</tariffing>
+				<init-price>10.0</init-price>
+			</parameters>
+			<i-net-pack-size>5000</i-net-pack-size>
+		</fix-internet-pack>
+
+		<per-mb-internet name="Light0" operator-name="MTS">
+			<payroll>5.5</payroll>
+			<call-prices>
+				<inner-call-price>0.5</inner-call-price>
+				<out-call-price>0.15</out-call-price>
+				<land-line-call-price>0.15</land-line-call-price>
+			</call-prices>
+			<sms-price>0.03</sms-price>
+			<parameters>
+				<number-favorites>0</number-favorites>
+				<tariffing>minute</tariffing>
+				<init-price>5.5</init-price>
+			</parameters>
+			<per-mb-price>0.5</per-mb-price>
+		</per-mb-internet>
+
+		<per-mb-internet name="Light1" operator-name="MTS">
+			<payroll>9.9</payroll>
+			<call-prices>
+				<inner-call-price>0.4</inner-call-price>
+				<out-call-price>0.11</out-call-price>
+				<land-line-call-price>0.11</land-line-call-price>
+			</call-prices>
+			<sms-price>0.03</sms-price>
+			<parameters>
+				<number-favorites>0</number-favorites>
+				<tariffing>minute</tariffing>
+				<init-price>9.9</init-price>
+			</parameters>
+			<per-mb-price>0.3</per-mb-price>
+		</per-mb-internet>
+
+		<fix-internet-pack name="Online1" operator-name="MTS" over-size-price="0.07">
+			<payroll>15.5</payroll>
+			<call-prices>
+				<inner-call-price>0.03</inner-call-price>
+				<out-call-price>0.11</out-call-price>
+				<land-line-call-price>0.11</land-line-call-price>
+			</call-prices>
+			<sms-price>0.03</sms-price>
+			<parameters>
+				<number-favorites>7</number-favorites>
+				<tariffing>minute</tariffing>
+				<init-price>9.9</init-price>
+			</parameters>
+			<i-net-pack-size>700</i-net-pack-size>
+		</fix-internet-pack>
+
+		<fix-internet-pack name="Online2" operator-name="MTS" over-size-price="0.07">
+			<payroll>17.7</payroll>
+			<call-prices>
+				<inner-call-price>0.02</inner-call-price>
+				<out-call-price>0.1</out-call-price>
+				<land-line-call-price>0.1</land-line-call-price>
+			</call-prices>
+			<sms-price>0.03</sms-price>
+			<parameters>
+				<number-favorites>7</number-favorites>
+				<tariffing>minute</tariffing>
+				<init-price>9.9</init-price>
+			</parameters>
+			<i-net-pack-size>1100</i-net-pack-size>
+		</fix-internet-pack>
+
+		<fix-internet-pack name="Online3" operator-name="MTS" over-size-price="0.07">
+			<payroll>27.7</payroll>
+			<call-prices>
+				<inner-call-price>0.01</inner-call-price>
+				<out-call-price>0.09</out-call-price>
+				<land-line-call-price>0.09</land-line-call-price>
+			</call-prices>
+			<sms-price>0.03</sms-price>
+			<parameters>
+				<number-favorites>7</number-favorites>
+				<tariffing>minute</tariffing>
+				<init-price>9.9</init-price>
+			</parameters>
+			<i-net-pack-size>2700</i-net-pack-size>
+		</fix-internet-pack>
+
+		<per-mb-internet name="Free0" operator-name="Life">
+			<payroll>3.0</payroll>
+			<call-prices>
+				<inner-call-price>0.05</inner-call-price>
+				<out-call-price>0.25</out-call-price>
+				<land-line-call-price>0.25</land-line-call-price>
+			</call-prices>
+			<sms-price>0.025</sms-price>
+			<parameters>
+				<number-favorites>10</number-favorites>
+				<tariffing>12seconds</tariffing>
+				<init-price>3.3</init-price>
+			</parameters>
+			<per-mb-price>0.4</per-mb-price>
+		</per-mb-internet>
+
+		<per-mb-internet name="Free1" operator-name="Life">
+			<payroll>5.1</payroll>
+			<call-prices>
+				<inner-call-price>0.04</inner-call-price>
+				<out-call-price>0.15</out-call-price>
+				<land-line-call-price>0.15</land-line-call-price>
+			</call-prices>
+			<sms-price>0.025</sms-price>
+			<parameters>
+				<number-favorites>10</number-favorites>
+				<tariffing>12seconds</tariffing>
+				<init-price>3.3</init-price>
+			</parameters>
+			<per-mb-price>0.3</per-mb-price>
+		</per-mb-internet>
+
+		<per-mb-internet name="Free2" operator-name="Life">
+			<payroll>8.3</payroll>
+			<call-prices>
+				<inner-call-price>0.03</inner-call-price>
+				<out-call-price>0.1</out-call-price>
+				<land-line-call-price>0.25</land-line-call-price>
+			</call-prices>
+			<sms-price>0.025</sms-price>
+			<parameters>
+				<number-favorites>10</number-favorites>
+				<tariffing>12seconds</tariffing>
+				<init-price>3.3</init-price>
+			</parameters>
+			<per-mb-price>0.3</per-mb-price>
+		</per-mb-internet>
+
+		<fix-internet-pack name="Big0" operator-name="Life" over-size-price="0.05">
+			<payroll>11.0</payroll>
+			<call-prices>
+				<inner-call-price>0.02</inner-call-price>
+				<out-call-price>0.11</out-call-price>
+				<land-line-call-price>0.11</land-line-call-price>
+			</call-prices>
+			<sms-price>0.025</sms-price>
+			<parameters>
+				<number-favorites>10</number-favorites>
+				<tariffing>12seconds</tariffing>
+				<init-price>9.3</init-price>
+			</parameters>
+			<i-net-pack-size>750</i-net-pack-size>
+		</fix-internet-pack>
+		
+		<fix-internet-pack name="Big1" operator-name="Life" over-size-price="0.04">
+			<payroll>21.0</payroll>
+			<call-prices>
+				<inner-call-price>0.01</inner-call-price>
+				<out-call-price>0.07</out-call-price>
+				<land-line-call-price>0.07</land-line-call-price>
+			</call-prices>
+			<sms-price>0.025</sms-price>
+			<parameters>
+				<number-favorites>10</number-favorites>
+				<tariffing>12seconds</tariffing>
+				<init-price>9.3</init-price>
+			</parameters>
+			<i-net-pack-size>2000</i-net-pack-size>
+		</fix-internet-pack>  
+
+		<fix-internet-pack name="Biggest" operator-name="Life" additional-i-net-fee="27.7" over-size-price="0.05">
+			<payroll>11.7</payroll>
+			<call-prices>
+				<inner-call-price>0.01</inner-call-price>
+				<out-call-price>0.05</out-call-price>
+				<land-line-call-price>0.05</land-line-call-price>
+			</call-prices>
+			<sms-price>0.025</sms-price>
+			<parameters>
+				<number-favorites>10</number-favorites>
+				<tariffing>12seconds</tariffing>
+				<init-price>9.3</init-price>
+			</parameters>
+			<i-net-pack-size>7000</i-net-pack-size>
+		</fix-internet-pack>
+	
+</tariffs>

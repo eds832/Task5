@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.com/tariffs"
+	xmlns:tns="http://www.example.com/tariffs" elementFormDefault="qualified">
+	<element name="tariff" type="tns:TariffType" abstract="true"></element>
+	<element name="fix-internet-pack" type="tns:FixInternetPack"
+		substitutionGroup="tns:tariff"></element>
+	<element name="per-mb-internet" type="tns:PerMbInternet"
+		substitutionGroup="tns:tariff"></element>
+	<element name="tariffs">
+		<complexType>
+			<sequence>
+				<element ref="tns:tariff" minOccurs="16" maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="TariffType">
+		<sequence>
+			<element name="payroll" type="tns:TariffValue" default="0" />
+			<element name="call-prices" type="tns:CallPrices" />
+			<element name="sms-price" type="tns:TariffValue" default="0" />
+			<element name="parameters" type="tns:Parameters" />
+		</sequence>
+		<attribute name="name" type="tns:Name" use="required" />
+		<attribute name="operator-name" type="tns:OperatorName" use="required" />
+	</complexType>
+	<simpleType name="Name">
+		<restriction base="ID">
+			<pattern value="[A-Z][a-zA-Z0-9]{1,19}" />
+		</restriction>
+	</simpleType>
+	<simpleType name="OperatorName">
+		<restriction base="string">
+			<enumeration value="Velcom" />
+			<enumeration value="MTS" />
+			<enumeration value="Life" />
+		</restriction>
+	</simpleType>
+	<complexType name="CallPrices">
+		<sequence>
+			<element name="inner-call-price" type="tns:TariffValue"
+				default="0" />
+			<element name="out-call-price" type="tns:TariffValue"
+				default="0" />
+			<element name="land-line-call-price" type="tns:TariffValue"
+				default="0" />
+		</sequence>
+	</complexType>
+	<complexType name="Parameters">
+		<sequence>
+			<element name="number-favorites" type="nonNegativeInteger"
+				default="0" />
+			<element name="tariffing">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="minute"></enumeration>
+						<enumeration value="12seconds"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="init-price" type="tns:TariffValue" default="0" />
+		</sequence>
+	</complexType>
+	<simpleType name="TariffValue">
+		<restriction base="decimal">
+			<minInclusive value="0" />
+			<maxInclusive value="1000" />
+		</restriction>
+	</simpleType>
+	<complexType name="FixInternetPack">
+		<complexContent>
+			<extension base="tns:TariffType">
+				<sequence>
+					<element name="i-net-pack-size" type="nonNegativeInteger"
+						default="0" />
+				</sequence>
+				<attribute name="additional-i-net-fee" type="tns:TariffValue"
+					use="optional" default="0" />
+				<attribute name="over-size-price" type="tns:TariffValue"
+					use="required" />
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="PerMbInternet">
+		<complexContent>
+			<extension base="tns:TariffType">
+				<sequence>
+					<element name="per-mb-price" type="tns:TariffValue"
+						default="0" />
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+</schema>
